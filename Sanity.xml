@@ -1,0 +1,59 @@
+<suite name="suite1">
+    
+    <test name="test1">
+        
+        <packages>
+            
+            <package name="com.test.testng.sample"></package>
+            
+        </packages>
+        
+    </test>
+    
+    
+     <test name="test2">
+        
+        <classes>
+            
+            <class name="com.test.testng.sample.AnnotationSample"></class>
+            <class name="com.test.testng.sample.AnnotationSample2"></class>
+            
+        </classes>
+        
+    </test>
+    
+     <test name="test3">
+        
+        <classes>
+            
+            <class name="com.test.testng.sample.AnnotationSample">
+           
+                <methods><include name="a_m5"></include></methods>
+                
+            </class>
+           
+            
+        </classes>
+        
+    </test>
+    
+     
+     <test name="test4">
+         
+         <groups>
+             <run>
+                 
+                 <include name="sanity"></include>
+                 
+             </run>
+             
+         </groups>
+         
+         <classes>
+             <class name="com.test.testng.sample.AnnotationSample"></class>
+         </classes>
+         
+     </test>
+     
+     
+</suite>
